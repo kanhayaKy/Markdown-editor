@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import RawInputArea from "./component/RawInputArea";
+import MarkdownSanitized from "./component/MarkdownSanitized";
+import { InputProvider } from "./context/InputContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <InputProvider>
+
+      <div className="App">
+        <div className="item">
+          <RawInputArea />
+        </div>
+        <div className="item">
+          <MarkdownSanitized />
+        </div>
+      </div>
+    </InputProvider>
   );
 }
 
