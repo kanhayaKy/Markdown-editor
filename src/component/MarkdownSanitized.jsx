@@ -4,7 +4,7 @@ import { Remarkable } from "remarkable";
 import parse from "html-react-parser";
 
 const MarkdownSanitized = () => {
-  const [text, setText] = useContext(InputContext);
+  const [text, ] = useContext(InputContext);
   var md = new Remarkable();
   md.set({
     html: true,
