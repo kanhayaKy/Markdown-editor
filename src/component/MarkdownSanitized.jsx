@@ -15,7 +15,7 @@ const MarkdownSanitized = () => {
   return (
     <>
       <header>
-        <h1>Output</h1>
+        <h1>Preview</h1>
       </header>
       <div className="displayarea">{markdownText}</div>
     </>

@@ -1,26 +1,26 @@
 header {
-  padding: 3vh;
+  padding: 2.5vh;
 }
 .App{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 textarea {
   width: 45vw;
-  height: 85vh;
-  margin: 0.5vw;
-  padding: 0.5vw;
+  height: 80vh;
+  padding: 1.5vw;
   font-size: x-large;
+  overflow: scroll;
   resize: none;
 }
 
 .displayarea {
   width: 48vw;
-  height: 85vh;
-  margin: 0.5vw;
+  height: 80vh;
   font-size: large;
-  padding: 0.5vw;
+  overflow: scroll;
+  padding: 1.5vw;
   border: 0.5px solid #AAA;
 }
 
